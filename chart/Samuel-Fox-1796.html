@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{'v':'Samuel Fox1', 'f':'Samuel Fox<div width="200" style="color:black; font-style:italic; width:120px;">b. 1786</div><div>m. Sarah</div>'},
+           '', 'Butcher'],
+		  [{'v':'Samuel Fox2', 'f':'Samuel Fox<div style="color:black; font-style:italic; width:160px;">b. 1786</br>m. Mary</div><div style="color:black; font-style:italic">b. 1801</div><div align="left"><b>1835</b> 1 Digbeth (butcher)</div><div align="left"><b>1841</b> 64 Digbeth (butcher)</div>'},
+           '', 'Butcher'],
+		  [{'v':'Thomas Fox', 'f':'Thomas Fox<div style="color:black; font-style:italic; width:120px;">b. 1825</div><div align="left"><b>1841</b> 64 Digbeth</div>'},
+           'Samuel Fox1',''],
+		  [{'v':'Sarah Fox', 'f':'Sarah Fox<div style="color:black; font-style:italic; width:120px;">b. 1827</div><div align="left"><b>1841</b> 64 Digbeth</div>'},
+           'Samuel Fox1',''], 
+          [{'v':'Charles J Fox', 'f':'Charles J Fox<div style="color:black; font-style:italic; width:120px;">b. 1830</div><div align="left"><b>1841</b> 64 Digbeth</div>'},
+           'Samuel Fox2',''],
+		  [{'v':'Walter Fox', 'f':'Walter Fox<div style="color:black; font-style:italic; width:120px;">b. 1833</div><div align="left"><b>1841</b> 64 Digbeth</div>'},
+           'Samuel Fox2',''],
+		  [{'v':'William Fox', 'f':'William Fox<div style="color:black; font-style:italic; width:120px;">b. 1837</div><div align="left"><b>1841</b> 64 Digbeth</div>'},
+           'Samuel Fox2',''],
+		  [{'v':'Arthur Fox', 'f':'Arthur Fox<div style="color:black; font-style:italaic; width:120px;">b. 1838</div>'},
+           'Samuel Fox2',''],
+		  [{'v':'Mary Ann Elizabeth Fox', 'f':'Mary Ann Elizabeth Fox<div style="color:black; font-style:italic; width:150px;">b. 1841</div>'},
+           'Samuel Fox2','']
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {'allowHtml':true});
+      }
+   </script>
+    </head>
+  <body>
+    <div id="chart_div"></div>
+    </p>
+    <b>Aris's Birmingham Gazette 3<sup>rd</sup> February 1834</b></br>
+    SHERIFF'S COURT, BIRMINGHAM</br>
+    On Friday (30<sup>th</sup> January) last, W.W. Lea, Esq. the Under Sheriff, held a Court at the Public Office for the recovery of debts under £20. The proceeding took place in the Court-room, and judging from the unusual number of attorneys and others present, the interest evinced in the permanent establishment of these new local courts, as affording the means of recovering debts with facility and at a considerable saving, was very appaent. There was only one Barrister, Mr. Scott, in attendance. The Court opened at ten o'clock, and the following persons were sworn on the Jury:- Mr. William Burt, Edgbaston, Foreman: Messrs. John Adkins, Deritend; Joseph Allen, Spiceal-street; Charles Bikker, Deritend; Luke Evans, Moor-street; <b>Samuel Fox, Digbeth;</b> Joseph Howes, Bordesley; William Lewis, High-street; Edward Latham, Bordesley; Joseph Price, Bull-street; John Porter, Edgbaston; and Edward Smallwood, Deritend. There were six causes entered for trial.</p>
+    <b>Aris's Birmingham Gazette 21<sup>st</sup> September 1835</b></br>
+    TO be SOLD, a four-wheeled CARRIAGE nearly new, with Harness complete. Apply to Mr. Samuel Fox, Butcher. No. 1, Digbeth, Birmngham</p>
+    <b>1851</b> Possibly became a coal dealer after leaving 64 Digbeth.</p>
+    <b>Birmingham Journal 27<sup>th</sup> December 1851</b></br>
+    On Monday (22<sup>nd</sup> December), aged 64 years, Mr. Samuel Fox, late coal-dealer, of this town.</p>
+    <b>Aris's Birmingham Gazette 29<sup>th</sup> December 1851</b></br>
+    On Monday (22<sup>nd</sup> December) last, aged 64, Mr. Samuel Fox, late coal-dealer, of this town.
+  </body>
+</html>
