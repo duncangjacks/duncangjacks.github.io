@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{'v':'Edgar Dunn 1812', 'f':'Edgar Dunn<div style="color:black; font-style:italic; width:225px;">1812 - </div><div>m. Emma Whittall</div><div align="left"><b>1812</b> Kingswinford, Staffs</br><b>1834</b> Birmingham</br><b>1835</b> Bristol?</br><b>1841</b> Park Street, Bham</br><b>1851</b>100 Park Street, Bham</br><b>1861</b>100 & 101 Park Street, Bham</br><b>1881</b>101 Park Street, Bham</br><b>1891</b>School Lane, Northfield, Worcs</br><b>1901</b> 7 York Street, Harborne, Bham</div>'},
+           '', 'Sadlers Ironmonger'],
+		  [{'v':'Nicholas Dunn', 'f':'Nicholas Allison Dunn<div width="250" style="color:black; font-style:italic; width:175px;">1835 - </div><div align="left"><b>1841</b> Park Street, Bham</br><b>1851</b>100 Park Street, Bham</div>'},'Edgar Dunn 1812',''],
+		  [{'v':'Mary Ann Dunn', 'f':'Mary Ann Dunn<div style="color:black; font-style:italic; width:210px;">1836 - </div><div align="left"><b>1841</b> Park Street, Bham</br><b>1851</b>100 Park Street, Bham</br><b>1891</b>School Lane, Northfield, Worcs</div>'},'Edgar Dunn 1812',''], 
+         [{'v':'Edgar Dunn 1838', 'f':'Edgar Dunn<div style="color:black; font-style:italic; width:200px;">1838 - </div><div align="left"><b>1841</b> Park Street, Bham</br><b>1851</b>100 Park Street, Bham</br><b>1861</b>100 & 101 Park Street, Bham</div>'},'Edgar Dunn 1812',''],
+		  [{'v':'Horatio Dunn', 'f':'Horatio Dunn<div style="color:black; font-style:italic; width:150px; vertical-align:text-top;">1840 - 1844</div><div align="left"><b>1841</b> Park Street, Bham</div>'},'Edgar Dunn 1812',''], 
+		 [{'v':'Henry Dunn', 'f':'Henry Dunn<div style="color:black; font-style:italic; width:200px;">1843 - </div><div align="left"><b>1851</b>100 Park Street, Bham</br><b>1861</b>100 & 101 Park Street, Bham</div>'},'Edgar Dunn 1812',''],
+      [{'v':'Ambrose Dunn', 'f':'Ambrose Dunn<div style="color:black; font-style:italic; width:100px;">1844 - 1848</div>'},'Edgar Dunn 1812',''],
+      [{'v':'Emma Jane Dunn', 'f':'Emma Jane Dunn<div style="color:black; font-style:italic; width:100px;">1846 - 1848</div>'},'Edgar Dunn 1812',''],
+      [{'v':'Ambrose Whittle Dunn', 'f':'Ambrose Whittle Dunn<div style="color:black; font-style:italic; width:200px;">1848 - </div><div align="left"><b>1851</b>100 Park Street, Bham</br><b>1861</b>100 & 101 Park Street, Bham</div>'},'Edgar Dunn 1812',''],
+      [{'v':'Joseph Dunn', 'f':'Joseph Dunn<div style="color:black; font-style:italic; width:175px;">1851 - </div><div align="left"><b>1851</b>100 Park Street, Bham</div>'},'Edgar Dunn 1812',''],
+      [{'v':'Arthur Charles Dunn', 'f':'Arthur Charles Dunn<div style="color:black; font-style:italic; width:125px;">1852 - 1853</div>'},'Edgar Dunn 1812',''],
+      [{'v':'George Edwin Dunn', 'f':'George Edwin Dunn<div style="color:black; font-style:italic; width:200px;">1854 - </div><div align="left"><b>1861</b>100 & 101 Park Street, Bham</div>'},'Edgar Dunn 1812',''],
+      [{'v':'Selina Ellen Dunn', 'f':'Selina Ellen Dunn<div style="color:black; font-style:italic; width:225px;">1856 - </div><div align="left"><b>1861</b>100 & 101 Park Street, Bham</br><b>1901</b> 7 York Street, Harborne, Bham</div>'},'Edgar Dunn 1812','']
+           ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+
+  // Define the options including selectedStyle.
+  var options = {
+    allowHtml: true, // To enable HTML content in tooltips
+    selectedStyle: {
+      color: '#ff0000', // Color of the selected node
+      fontSize: 14,     // Font size of the selected node
+      bold: true        // Whether the selected node text should be bold
+      // Other style properties can be added as needed
+    }
+  };
+
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {'allowHtml':true});
+      }
+   </script>
+    </head>
+  <body>
+  <div id="chart_div"></div>
+  </p>
+  1843 Oct 7 Birmingham Journal</br>
+  <b>BIRMINGHAM DISTRICT COURT OF BANKRUPTCY</b></br>
+  I, EDGAR DUNN, at present and two years last past, residing at No. 19 in Freeman Street, in tha parish of Birmingham, and county of Warwick, and being a saddlers' ironmonger and retail brewer, and for five years immediately previous threrto residing at No. 85, in Park Street, in the parish aforesaid, and then carrying on the trade of a saddler's ironmonger only, DO HEREBY GIVE NOTICE, that I intend to present a petition to the Court of Bankruptcy, at the Birmingham District Court of Bankruptcy, in Birmingham aforesaid, praying to be examined touching my debts, estate, and effects; and to be protected from all process, upon making a full disclosure and surrender of such estate and affects, for payment of my just and lawful debts; and I hereby further give notice, that the time when the matter of the said petition shall be heard is to be advertised in the <i>London Gazette</i>, and in the <i>Birmingham Journal</i> newspaper, one month at the least after the date hereof. As witness my hand, this sixth day of October, in the year of our Lord one thousand eight hundred and forty-three. EDGAR DUNN.</br>
+  Thomas Harding, Solicitor, Birmingham
+    
+  </body>
+</html>
